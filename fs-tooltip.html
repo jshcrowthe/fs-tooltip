@@ -1,0 +1,57 @@
+<link rel="import" href="../polymer/polymer.html">
+<!--
+Example:
+
+   When the user hovers over the element the
+   text attribute will populate the tooltip
+   and the direction attribute will tell it
+   where to display.
+
+    <fs-tooltip text="Click Me" direction="top">
+      <button>Hover</button>
+    </fs-tooltip>
+
+@group Seed Elements
+@element fs-tooltip
+@demo demo/index.html
+-->
+<dom-module id="fs-tooltip">
+  <link rel="import" type="css" href="fs-tooltip.css">
+  <template>
+    
+    <content class="tooltip-content"></content>
+    <span id='tooltip' class='fs-tooltip__tip' hidden='{{!text}}'>{{text}}</span>
+
+  </template>
+
+</dom-module>
+
+<script>
+
+  Polymer({
+    is: 'fs-tooltip',
+    properties: {
+
+      /**
+       * Valid Values: 'top', `bottom`, `left`, `right`
+       * @type {String}
+       */
+      direction: {
+        type: String,
+        value: 'top',
+        reflectToAttribute: true
+      },
+      /**
+       *  The string that will be shown in the tooltip, if left
+       * null the tooltip will be hidden
+       * 
+       * @type {String}
+       */
+      text: {
+        type: String,
+        value: null
+      }
+    }
+  });
+
+</script>

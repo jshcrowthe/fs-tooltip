@@ -1,0 +1,36 @@
+{
+  "name": "fs-tooltip",
+  "authors": [
+    "Anonymous <anonymous@example.com>"
+  ],
+  "description": "An element providing a solution to no problem in particular.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "fs-tooltip.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  },
+  "_release": "82c4989812",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "82c498981251ff36fd471fd0a53d212a1f59b07d"
+  },
+  "_source": "git://github.com/jshcrowthe/fs-tooltip.git",
+  "_target": "master",
+  "_originalSource": "jshcrowthe/fs-tooltip",
+  "_direct": true
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>fs-tooltip Demo</title>
+    <script src="../../webcomponentsjs/webcomponents.js"></script>
+    <script>
+      window.Polymer = window.Polymer || { dom: 'shadow' }
+    </script>
+    <link rel="import" href="../fs-tooltip.html">
+    <style>
+      body {
+        padding: 50px 150px;
+      }
+      button {
+        padding: 10px;
+      }
+    </style>
+
+  </head>
+  <body unresolved>
+
+    <p>An example of <code>&lt;fs-tooltip&gt;</code>:</p>
+
+    <fs-tooltip text="Default tooltip position is above.">
+      <button>Above (Default)</button>
+    </fs-tooltip>
+
+    <fs-tooltip direction='left' text="And lets not forget to the left.">
+      <button>Left</button>
+    </fs-tooltip>
+
+    <fs-tooltip direction='bottom' text="Or even below the element.">
+      <button>Below</button>
+    </fs-tooltip>
+
+    <fs-tooltip direction='right' text="You can also position the tooltip to the right.">
+      <button>Right</button>
+    </fs-tooltip>
+    
+
+    <fs-tooltip>
+      <button>No Text</button>
+    </fs-tooltip>
+
+  </body>
+</html>
