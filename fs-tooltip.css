@@ -21,6 +21,7 @@
   z-index: 99999;
   opacity: 0;
 }
+
 .fs-tooltip__tip:before {
   background: #fff;
   border-radius: 4px;
@@ -86,8 +87,7 @@
   left: -7px;
 }
 
-:host(:hover) ::content + .fs-tooltip__tip,
-:host(:hover) ::content + .fs-tooltip__tip {
+:host(:hover) .fs-tooltip__tip {
   width: 200px;
   height: inherit;
   clip: auto;

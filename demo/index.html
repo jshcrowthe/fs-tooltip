@@ -6,7 +6,9 @@
     <title>fs-tooltip Demo</title>
     <script src="../../webcomponentsjs/webcomponents.js"></script>
     <script>
+    if ('createShadowRoot' in HTMLElement.prototype) {
       window.Polymer = window.Polymer || { dom: 'shadow' }
+    }
     </script>
     <link rel="import" href="../fs-tooltip.html">
     <style>
