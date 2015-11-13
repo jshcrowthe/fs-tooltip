@@ -5,6 +5,7 @@
 
 .fs-tooltip__tip {
   background: #fff;
+  border: none;
   border-radius: 4px;
   bottom: 100%;
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35), 0px 3px 2px 0px rgba(0,0,0,0.18);
@@ -88,7 +89,8 @@
 }
 
 :host(:hover) .fs-tooltip__tip {
-  width: 200px;
+  width: inherit;
+  max-width: 200px;
   height: inherit;
   clip: auto;
   overflow: visible;
